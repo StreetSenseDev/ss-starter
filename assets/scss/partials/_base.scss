@@ -1,0 +1,47 @@
+// Add any custom base CSS can go here
+
+
+// Foundation
+// =≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠
+html {
+  padding: 0;
+  margin: 0;
+
+  @apply antialiased;  
+  text-rendering: optimizeLegibility;
+
+}
+body{
+  padding: 0;
+  margin: 0;
+
+  font-family: Helvetica, Arial, sans-serif;
+  
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+b,strong{
+  font-weight: 700;
+  font-style: normal;
+}
+p{
+  //margin-bottom: 2rem;
+}
+h1{font-size: 300px;}
+h2{}
+h3{}
+
+* {
+  box-sizing: border-box;
+}
+:focus { outline: none;border:0; }
+
+hr{
+  border:0;
+  height:1px;
+  width:100%;
+  background: rgb(242,242,242);
+  background: linear-gradient(180deg, rgba(242,242,242,1) 0%, rgba(255,255,255,1) 100%);
+}
+

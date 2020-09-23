@@ -1,0 +1,28 @@
+$module: '#loader';
+#{$module} {
+  position:fixed;
+  z-index:99999;
+  top:0;
+  left:0;
+  right:0;
+  height:5px;
+  background:transparent;
+  transition: opacity 0.3s;
+  opacity:1;
+  &.hide{
+    opacity:0;
+  }
+}
+#progress{
+  height:5px;
+  background:#000;
+  position:absolute;
+  width:0;
+  top:0;
+  transition: 0.6s;
+  box-shadow: 0px 0px 4px rgba(0,0,0,0.5);
+}
+
+
+
+
