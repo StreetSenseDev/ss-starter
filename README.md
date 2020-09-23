@@ -19,7 +19,7 @@ Rename folder to your theme name, search and reaplce `qbstarter` witht he name o
 
 ### Deployment
 
-TBD
+Run `npm run prod` to execute development. Code as you will.
 
 ### Features
 
