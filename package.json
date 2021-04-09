@@ -56,11 +56,11 @@
     "sass-loader": "7.*",
     "tailwindcss": "^1.9.6",
     "vue-template-compiler": "^2.6.12",
+    "extract-text-webpack-plugin": "^3.0.2",
     "webpack-cli": "^3.3.12"
   },
   "dependencies": {
     "curtainsjs": "^7.3.2",
-    "extract-text-webpack-plugin": "^3.0.2",
     "gsap": "^3.5.1",
     "jquery": "^3.6.0",
     "jquery-mousewheel": "^3.1.13",
