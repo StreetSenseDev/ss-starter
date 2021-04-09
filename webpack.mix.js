@@ -28,8 +28,8 @@ if (local.proxy) {
 
 mix.tailwind();
 
-mix.js('assets/js/app.js', 'js').js('assets/js/admin.js', 'js');
-mix.sass('assets/scss/app.scss', 'css').sass('assets/scss/admin.scss', 'css');
+mix.js('assets/js/app.js', 'js');
+mix.sass('assets/scss/app.scss', 'css');
 
 // The package internally limits running to production builds so we don't need
 // to wrap this up with a condition.
