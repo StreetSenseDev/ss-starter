@@ -1,7 +1,7 @@
 <?php
 
 
-namespace QBStarter;
+namespace qbstarter;
 
 
 /**
@@ -13,7 +13,7 @@ namespace QBStarter;
  * This class provides the functionality to resolve the file name using the generated manifest at
  * /build/mix-manifest.json without having to specify the version hash.
  *
- * @package QBStarter
+ * @package qbstarter
  */
 class AssetResolver {
 

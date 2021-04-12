@@ -5,8 +5,8 @@
  * Displays all of the head element and everything up until the "site-content" div.
  *
  * @package WordPress
- * @subpackage qbstarter
- * @since qbstarter Theme 1.0
+ * @subpackage qb-starter
+ * @since qb-starter Theme 1.0
  */
 
 get_header();

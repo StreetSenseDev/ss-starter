@@ -7,8 +7,8 @@ function my_plugin_block_categories( $categories, $post ) {
       $categories,
       array(
           array(
-              'slug' => 'qbstarter-category',
-              'title' => __( 'Custom Blocks', 'qbstarter' )
+              'slug' => 'qb-starter-category',
+              'title' => __( 'Custom Blocks', 'qb-starter' )
           ),
       )
   );
@@ -39,7 +39,7 @@ function my_acf_init() {
 			'title'				=> __('Starter Block'),
 			'description'		=> __('Use this block as a starting point in building a custom Gutenberg Block'),
 			'render_callback'	=> 'my_acf_block_render_callback',
-			'category'			=> 'qbstarter-category',
+			'category'			=> 'qb-starter-category',
 			'icon'				=> array(
         // Specifying a background color to appear with the icon e.g.: in the inserter.
         'background' => 'rgb(230,230,230)',
@@ -48,7 +48,7 @@ function my_acf_init() {
         // Specifying a dashicon for the block
         'src' => 'editor-table',
       ),
-			'keywords'			=> array( 'hero', 'images', 'full width', 'qbstarter'  ),
+			'keywords'			=> array( 'hero', 'images', 'full width', 'qb-starter'  ),
     ));
   }
 }

@@ -1,15 +1,15 @@
 <?php
 
 
-use QBStarter\AssetResolver;
+use qbstarter\AssetResolver;
 
 
 add_action( 'wp_enqueue_scripts', function () {
 	print_r(AssetResolver::resolve( 'css/app.6fc1af.css' ));
 
 	// register custom fonts
-	// wp_enqueue_style( 'qbstarter-fonts', 'https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300&display=swap');
-	// wp_enqueue_style('qbstarter-fontawesome','https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+	// wp_enqueue_style( 'qb-starter-fonts', 'https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300&display=swap');
+	// wp_enqueue_style('qb-starter-fontawesome','https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
 	// registers scripts and stylesheets
 	wp_register_style( 'app-css', AssetResolver::resolve( 'css/app.css' ), [], false );
@@ -29,7 +29,7 @@ add_action( 'admin_enqueue_scripts', function ($hook) {
 	}
 
 	// register custom fonts
-	// wp_enqueue_style( 'qbstarter-fonts', 'https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300&display=swap');
+	// wp_enqueue_style( 'qb-starter-fonts', 'https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300&display=swap');
 	// wp_enqueue_style('jsq2-2020-fontawesome','https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
 	// registers scripts and stylesheets

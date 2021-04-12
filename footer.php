@@ -5,8 +5,8 @@
  * Contains the closing of the #content div and all content after
  *
  * @package WordPress
- * @subpackage qbstarter
- * @since qbstarter Theme 1.0
+ * @subpackage qb-starter
+ * @since qb-starter Theme 1.0
  */
 ?>
 

@@ -2,7 +2,7 @@
 
 /*
  * @category   Custom
- * @package    qbstarter
+ * @package    qb-starter
  * @author     John Hanusek <john.hanusek@quallsbenson.com>
  * @copyright  2010-2020 Qualls Benson LLC
  * @license    http://www.php.net/license/3_01.txt  PHP License 3.01

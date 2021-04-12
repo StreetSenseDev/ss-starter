@@ -199,7 +199,7 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 			__webpack_require__.O();
 /******/ 		}
 /******/ 		
-/******/ 		var chunkLoadingGlobal = self["webpackChunkqbstarter"] = self["webpackChunkqbstarter"] || [];
+/******/ 		var chunkLoadingGlobal = self["webpackChunkqb-starter"] = self["webpackChunkqb-starter"] || [];
 /******/ 		chunkLoadingGlobal.forEach(webpackJsonpCallback.bind(null, 0));
 /******/ 		chunkLoadingGlobal.push = webpackJsonpCallback.bind(null, chunkLoadingGlobal.push.bind(chunkLoadingGlobal));
 /******/ 	})();

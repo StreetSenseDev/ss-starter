@@ -3,7 +3,7 @@
 // Excerpt Control
 
 function qb_starter_excerpt_more( $more ) {
-	return ' <br /><a class="read-more" href="'. get_permalink( get_the_ID() ) . '">' . __('+ Read more', 'qbstarter') . '</a>';
+	return ' <br /><a class="read-more" href="'. get_permalink( get_the_ID() ) . '">' . __('+ Read more', 'qb-starter') . '</a>';
 }
 add_filter( 'excerpt_more', 'qb_starter_excerpt_more' );
 

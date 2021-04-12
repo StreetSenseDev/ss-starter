@@ -2,17 +2,17 @@
 /*
 
  * @category   Functions
- * @package    qbstarter
+ * @package    qb-starter
  * @author     John Hanusek <john.hanusek@quallsbenson.com>
  * @copyright  2010-2020 Qualls Benson LLC
  * @license    http://www.php.net/license/3_01.txt  PHP License 3.01
  * @version    Release: 0.0.1
- * @link       https://github.com/jcnh74/qbstarter
+ * @link       https://github.com/jcnh74/qb-starter
  * @since      Class available since Release 0.0.1
 */
 
-use QBStarter\AutoLoader;
-use QBStarter\View;
+use qbstarter\AutoLoader;
+use qbstarter\View;
 
 /*
  * Set up our auto loading class and mapping our namespace to the app directory.
@@ -26,7 +26,7 @@ use QBStarter\View;
 require get_stylesheet_directory() . '/app/AutoLoader.php';
 $loader = new AutoLoader();
 $loader->register();
-$loader->addNamespace( 'QBStarter', get_stylesheet_directory() . '/app' );
+$loader->addNamespace( 'qbstarter', get_stylesheet_directory() . '/app' );
 
 View::$view_dir = get_stylesheet_directory() . '/templates/views';
 

@@ -14,7 +14,7 @@ WordPress Starter Theme for use as a starting template for building custom theme
 
 The theme is setup to use [Laravel Mix](https://laravel.com/docs/8.x/mix) to compile SCSS (with source maps), run it through [browserSync](https://github.com/ai/autoprefixer), lint, concatenate and minify JavaScript (with source maps), optimize images, and syncs changes across local development devices with [BrowserSync](https://github.com/shakyShane/browser-sync), with flexibility to add any additional tasks via the webpack.mix.js. 
 
-Rename folder to your theme name, search and reaplce `qbstarter` witht he name of your choice. Open the theme directory in terminal and run `npm install` to pull in all package dependencies. Run `npm run dev` to execute development. Code as you will.
+Rename folder to your theme name, search and reaplce `qb-starter` witht he name of your choice. Open the theme directory in terminal and run `npm install` to pull in all package dependencies. Run `npm run dev` to execute development. Code as you will.
 
 
 ### Deployment

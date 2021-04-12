@@ -1,7 +1,7 @@
 <?php
 
 
-namespace QBStarter;
+namespace qbstarter;
 
 
 class View {

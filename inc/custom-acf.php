@@ -1,7 +1,7 @@
 <?php
 /*
  * @category   Custom
- * @package    qbstarter
+ * @package    qb-starter
  * @author     John Hanusek <john.hanusek@quallsbenson.com>
  * @copyright  2010-2020 Qualls Benson LLC
  * @license    http://www.php.net/license/3_01.txt  PHP License 3.01
@@ -38,7 +38,7 @@ if( function_exists('acf_add_options_page') ) {
 // 			'title'				=> __('Gallery'),
 // 			'description'		=> __('A custom gallery block.'),
 // 			'render_callback'	=> 'qb_starter_acf_block_render_callback',
-// 			'category'			=> 'qbstarter',
+// 			'category'			=> 'qb-starter',
 // 			'icon'				=> array(
 //         // Specifying a background color to appear with the icon e.g.: in the inserter.
 //         'background' => 'rgb(251,126,87)',
@@ -47,7 +47,7 @@ if( function_exists('acf_add_options_page') ) {
 //         // Specifying a dashicon for the block
 //         'src' => 'images-alt2',
 //       ),
-// 			'keywords'			=> array( 'gallery', 'images', 'slideshow', 'qbstarter' ),
+// 			'keywords'			=> array( 'gallery', 'images', 'slideshow', 'qb-starter' ),
 // 		));
 // 	}
 // }

@@ -1,11 +1,11 @@
 {
-  "name": "qbstarter",
+  "name": "qb-starter",
   "version": "0.2.3",
   "description": "A starter kit for developing WordPress themes with Tailwind",
   "homepage": "https://github.com/mishterk/wp-tailwindcss-theme-boilerplate",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jcnh74/qbstarter.git"
+    "url": "https://github.com/jcnh74/qb-starter.git"
   },
   "keywords": [
     "wordpress",
@@ -60,7 +60,6 @@
     "webpack-cli": "^3.3.12"
   },
   "dependencies": {
-    "curtainsjs": "^7.3.2",
     "gsap": "^3.5.1",
     "jquery": "^3.6.0",
     "jquery-mousewheel": "^3.1.13",
