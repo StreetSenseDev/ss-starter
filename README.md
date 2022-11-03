@@ -1,6 +1,6 @@
 # QuallsBenson Starter Theme
 
-Version: 1.2.2
+Version: 1.2.3
 
 ## Author:
 
@@ -43,7 +43,7 @@ Anyone and everyone is welcome to contribute! Check out the [Contributing Guidel
 
 ### Contributors:
 
-- [jcnh74](https://github.com/jcnh74)
+- [jcnh74](https://github.com/jcnh74) [hanusek.com](https://hanusek.com)
 
 ### Credits
 
