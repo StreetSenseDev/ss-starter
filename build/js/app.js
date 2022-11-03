@@ -11,12 +11,10 @@
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_ExampleComponent__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/ExampleComponent */ "./assets/js/components/ExampleComponent.js");
 // Import Custom Conponents
- // Initialise our components on jQuery.ready…
 
-jQuery(function ($) {
-  // ExampleComponent.
-  _components_ExampleComponent__WEBPACK_IMPORTED_MODULE_0__.default.init();
-});
+
+// ExampleComponent.
+_components_ExampleComponent__WEBPACK_IMPORTED_MODULE_0__["default"].init();
 
 /***/ }),
 
@@ -30,21 +28,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-var $ = window.jQuery;
-var $window = window.$window || $(window);
 var ExampleComponent1 = {
   init: function init() {
     var _this = this;
-
-    var $module = $('div');
-    if (!$module.length) return;
-    $module.each(function (index, element) {
-      _this.each(element);
+    var allDivs = document.querySelectorAll('div');
+    console.log(allDivs);
+    if (!allDivs.length) return;
+    allDivs.forEach(function (element, index) {
+      _this.update(element, index);
+      //console.log(index, element);
     });
   },
-  each: function each(element) {
-    var $item = $(element); // do something here
-    //alert('Example 1 is working...');
+  update: function update(element, index) {
+    // do something here
+    console.log(element, index + ' is working...');
   }
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ExampleComponent1);
@@ -117,7 +114,8 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 				}
 /******/ 				if(fulfilled) {
 /******/ 					deferred.splice(i--, 1)
-/******/ 					result = fn();
+/******/ 					var r = fn();
+/******/ 					if (r !== undefined) result = r;
 /******/ 				}
 /******/ 			}
 /******/ 			return result;
@@ -182,24 +180,26 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 			// add "moreModules" to the modules object,
 /******/ 			// then flag all "chunkIds" as loaded and fire callback
 /******/ 			var moduleId, chunkId, i = 0;
-/******/ 			for(moduleId in moreModules) {
-/******/ 				if(__webpack_require__.o(moreModules, moduleId)) {
-/******/ 					__webpack_require__.m[moduleId] = moreModules[moduleId];
+/******/ 			if(chunkIds.some((id) => (installedChunks[id] !== 0))) {
+/******/ 				for(moduleId in moreModules) {
+/******/ 					if(__webpack_require__.o(moreModules, moduleId)) {
+/******/ 						__webpack_require__.m[moduleId] = moreModules[moduleId];
+/******/ 					}
 /******/ 				}
+/******/ 				if(runtime) var result = runtime(__webpack_require__);
 /******/ 			}
-/******/ 			if(runtime) runtime(__webpack_require__);
 /******/ 			if(parentChunkLoadingFunction) parentChunkLoadingFunction(data);
 /******/ 			for(;i < chunkIds.length; i++) {
 /******/ 				chunkId = chunkIds[i];
 /******/ 				if(__webpack_require__.o(installedChunks, chunkId) && installedChunks[chunkId]) {
 /******/ 					installedChunks[chunkId][0]();
 /******/ 				}
-/******/ 				installedChunks[chunkIds[i]] = 0;
+/******/ 				installedChunks[chunkId] = 0;
 /******/ 			}
-/******/ 			__webpack_require__.O();
+/******/ 			return __webpack_require__.O(result);
 /******/ 		}
 /******/ 		
-/******/ 		var chunkLoadingGlobal = self["webpackChunkqb-starter"] = self["webpackChunkqb-starter"] || [];
+/******/ 		var chunkLoadingGlobal = self["webpackChunkqb_starter"] = self["webpackChunkqb_starter"] || [];
 /******/ 		chunkLoadingGlobal.forEach(webpackJsonpCallback.bind(null, 0));
 /******/ 		chunkLoadingGlobal.push = webpackJsonpCallback.bind(null, chunkLoadingGlobal.push.bind(chunkLoadingGlobal));
 /******/ 	})();

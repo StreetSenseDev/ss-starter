@@ -1,23 +1,22 @@
-const $ = window.jQuery;
-const $window = window.$window || $(window);
-
 const ExampleComponent1 = {
 
     init () {
-        var $module = $('div');
-        if (!$module.length)
+        var allDivs = document.querySelectorAll('div');
+        console.log(allDivs);
+        if (!allDivs.length)
             return;
 
-        $module.each((index, element) => {
-            this.each(element);
+        allDivs.forEach((element, index) => {
+
+            this.update(element, index);
+            //console.log(index, element);
         });
     },
 
-    each (element) {
+    update (element, index) {
 
-        let $item = $(element);
         // do something here
-        //alert('Example 1 is working...');
+        console.log(element, index + ' is working...');
 
     }
 

@@ -20,9 +20,10 @@
 <?php if ( is_singular() && pings_open( get_queried_object() ) ) : ?>
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <?php endif; ?>
-
-<?php if(get_field('favicon', 'option')) : ?>
-	<link rel="shortcut icon" href="<?php echo get_field('favicon', 'options')['url']; ?>" />
+<?php if (class_exists('ACF')) : ?>
+  <?php if(get_field('favicon', 'option')) : ?>
+    <link rel="shortcut icon" href="<?php echo get_field('favicon', 'options')['url']; ?>" />
+  <?php endif; ?>
 <?php endif; ?>
 
 <?php wp_head(); ?>

@@ -6,10 +6,6 @@
  */
 
 
-$gallery = get_field('gallery');
-
-
-
 $className = '';
 if( !empty($block['className']) ) {
     $className .= ' ' . $block['className'];
@@ -25,8 +21,10 @@ $align_class = $block['align'] ? 'align' . $block['align'] : '';
 ?>
 
 
+<?php if (class_exists('ACF')) : ?>
 <section class="advanced-gallery <?php echo $className; ?>" id="<?php echo $id; ?>">
   <div class="advanced-gallery-slick viewport">
+
     <?php
       if( have_rows('gallery') ):
         $count = 0;
@@ -121,3 +119,4 @@ $align_class = $block['align'] ? 'align' . $block['align'] : '';
     <div class="close"></div>
   </div>
 </section>
+<?php endif; ?>
